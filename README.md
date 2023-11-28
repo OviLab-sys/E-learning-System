@@ -6,7 +6,7 @@ access learning materials, and participate in quizzes and discussions.
 
 
 
-Features
+#Features
 
 User Authentication: Secure user registration and login system for both instructors and students.
 Course Management: Instructors can create, update, and delete courses. They can also add lessons, quizzes, and multimedia content.
@@ -17,7 +17,7 @@ Progress Tracking: Track and display student progress within each course.
 
 
 
-Tech Stack
+#Tech Stack
 
 Django: Web framework for building the backend.
 Django REST Framework: Toolkit for building Web APIs.
