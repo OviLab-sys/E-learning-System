@@ -4,9 +4,43 @@
     <head>
         <meta charset="utf-8" />
         <title>
-        {% block  %}
-            
+        {% block title %}
+            educa
         {% endblock  %}
-            </title>
+        </title>
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">
     </head>
+    <body>
+        <div id="header">
+            <a href="/" class="logo">Educa</a>
+            <ul class="menu">
+                {% if request.user.is_authenticated %}
+                    <li>
+                        <a href="{% url 'logout' %}">Sign out</a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="{% url 'login' %}">Sign in</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+        <div id="content">
+            
+            {% block content %}
+                
+            {% endblock content %}
+                
+        </div>
+        <script>
+            document.addEventListener('DOMContentloaded', (event)=>{
+                //DOM loaded
+                
+                {% block domready %}
+                    
+                {% endblock domready %}
+                    
+            })
+        </script>
+    </body>
 </html>
