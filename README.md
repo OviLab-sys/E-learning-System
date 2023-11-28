@@ -6,7 +6,7 @@ access learning materials, and participate in quizzes and discussions.
 
 
 
-#Features
+# Features
 
 User Authentication: Secure user registration and login system for both instructors and students.
 Course Management: Instructors can create, update, and delete courses. They can also add lessons, quizzes, and multimedia content.
