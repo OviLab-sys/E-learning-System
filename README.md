@@ -17,10 +17,10 @@ Progress Tracking: Track and display student progress within each course.
 
 
 
-#Tech Stack
+# Tech Stack
 
 Django: Web framework for building the backend.
 Django REST Framework: Toolkit for building Web APIs.
 PostgreSQL: Database management.
 HTML, CSS, JavaScript: Frontend development.
-Bootstrap: Frontend framework for responsive design.
+Tailwind css: Frontend framework for responsive design.
