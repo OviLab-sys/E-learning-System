@@ -134,11 +134,14 @@ LOGIN_REDIRECT_URL =    reverse_lazy('student_course_list')
 
 CACHES = {
     'default':{
-        'BACKEND':'django.core.cache.backends.memcached.PyMemcacheCache',
-        'LOCATION':'127.0.0.1:11211',
+        'BACKEND':'django.core.cache.backends.redis.RedisCache',
+        'LOCATION':'127.0.0.1:6379',
     }
 }
 
 INTERNAL_IPS = [
     '127.0.0.1',
 ]
+CACHE_MIDDLEWARE_ALIAS = 'default'
+CACHE_MIDDLEWARE_SECONDS = 60*15  #fifteen minutes
+CACHE_MIDDLEWARE_KEY_PREFIX = 'educa'
